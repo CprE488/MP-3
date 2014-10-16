@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section name="Workbench">
+	<item value="/tmp/cpre488-vens/MP-3/bootimage/bootimage.bif" key="com.xilinx.sdk.bootimage.history"/>
+	<item value="/tmp/cpre488-vens/MP-3/bootimage" key="zynq_fsbl-outputFile"/>
+</section>

@@ -1,0 +1,25 @@
+16:59:25.424 INFO  - Processing command line option -hwspec /tmp/cpre488-vens/MP-3/system/SDK/SDK_Export/hw/system.xml. 
+17:00:38.832 INFO  - Saving repository preferences. 
+17:00:38.833 INFO  - Reading in cores from local repositories: 
+		 /tmp/cpre488-vens/MP-3/repository/ProcessorIPLib
+		 /tmp/cpre488-vens/MP-3/repository 
+17:00:38.835 INFO  - Updating libgen.options on all BSP projects. 
+17:00:38.836 INFO  - Cleaning BSP projects in the workspace. 
+17:01:17.583 INFO  - Saving repository preferences. 
+17:01:46.111 INFO  - 'device-tree' is a board support package for an OS for which applications cannot be developed within SDK. 
+17:01:46.111 INFO  - You can configure and build project 'device-tree_bsp_0' within SDK at will, but have to export it into the appropriate third party environment to develop applications. 
+17:01:46.723 WARN  - Unable to determine location of documentation for OS device-tree. 
+17:12:57.775 INFO  - Processing command line option -hwspec /tmp/cpre488-vens/MP-3/system/SDK/SDK_Export/hw/system.xml. 
+17:13:36.223 INFO  - Processing command line option -hwspec /tmp/cpre488-vens/MP-3/system/SDK/SDK_Export/hw/system.xml. 
+17:14:23.274 INFO  - Processing command line option -hwspec /tmp/cpre488-vens/MP-3/system/SDK/SDK_Export/hw/system.xml. 
+17:17:38.830 INFO  - Processing command line option -hwspec /tmp/cpre488-vens/MP-3/system/SDK/SDK_Export/hw/system.xml. 
+17:18:41.461 INFO  - Processing command line option -hwspec /tmp/cpre488-vens/MP-3/system/SDK/SDK_Export/hw/system.xml. 
+17:23:35.606 INFO  - Restoring local repository preferences: 
+		 /tmp/cpre488-vens/MP-3/repository/ProcessorIPLib
+		 /tmp/cpre488-vens/MP-3/repository 
+17:24:21.125 INFO  - Processing command line option -hwspec /tmp/cpre488-vens/MP-3/system/SDK/SDK_Export/hw/system.xml. 
+17:24:57.939 INFO  - Processing command line option -hwspec /tmp/cpre488-vens/MP-3/system/SDK/SDK_Export/hw/system.xml. 
+17:25:20.474 INFO  - Restoring local repository preferences: 
+		 /tmp/cpre488-vens/MP-3/repository/ProcessorIPLib
+		 /tmp/cpre488-vens/MP-3/repository 
+17:27:59.544 INFO  - Processing command line option -hwspec /tmp/cpre488-vens/MP-3/system/SDK/SDK_Export/hw/system.xml. 

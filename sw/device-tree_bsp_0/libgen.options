@@ -1,0 +1,3 @@
+PROCESSOR=ps7_cortexa9_0
+REPOSITORIES=-lp /tmp/cpre488-vens/MP-3/repository/ProcessorIPLib -lp ../../repository
+HWSPEC=../system_hw_platform/system.xml
