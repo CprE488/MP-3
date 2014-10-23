@@ -1,4 +1,4 @@
-* Rocket launcher specifics */
+/* Rocket launcher specifics */
 #define LAUNCHER_VENDOR_ID              0x2123
 #define LAUNCHER_PRODUCT_ID             0x1010
 

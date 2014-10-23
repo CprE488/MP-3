@@ -9,9 +9,6 @@ use UNISIM.VCOMPONENTS.ALL;
 
 entity system_stub is
   port (
-    SWs_8Bits_TRI_IO : inout std_logic_vector(7 downto 0);
-    LEDs_8Bits_TRI_IO : out std_logic_vector(7 downto 0);
-    BTNs_5Bits_TRI_IO : inout std_logic_vector(4 downto 0);
     processing_system7_0_MIO : inout std_logic_vector(53 downto 0);
     processing_system7_0_PS_SRSTB : in std_logic;
     processing_system7_0_PS_CLK : in std_logic;
@@ -32,7 +29,33 @@ entity system_stub is
     processing_system7_0_DDR_DQS : inout std_logic_vector(3 downto 0);
     processing_system7_0_DDR_DQS_n : inout std_logic_vector(3 downto 0);
     processing_system7_0_DDR_VRN : inout std_logic;
-    processing_system7_0_DDR_VRP : inout std_logic
+    processing_system7_0_DDR_VRP : inout std_logic;
+    IIC_FMC_SCL : inout std_logic;
+    IIC_FMC_SDA : inout std_logic;
+    fmc_imageon_hdmi_in_0_io_hdmii_spdif_pin : in std_logic;
+    fmc_imageon_hdmi_out_0_io_hdmio_spdif_pin : out std_logic;
+    fmc_imageon_hdmi_out_0_io_hdmio_video_pin : out std_logic_vector(15 downto 0);
+    fmc_imageon_hdmi_out_0_io_hdmio_clk_pin : out std_logic;
+    fmc_imageon_video_clk1 : in std_logic;
+    fmc_imageon_iic_0_Rst_pin : out std_logic;
+    fmc_imageon_iic_0_Sda_pin : inout std_logic;
+    fmc_imageon_iic_0_Scl_pin : inout std_logic;
+    BTNs_5Bits_GPIO : inout std_logic_vector(4 downto 0);
+    SWs_8Bits_GPIO : inout std_logic_vector(7 downto 0);
+    fmc_imageon_vita_receiver_0_io_vita_clk_pll_pin : out std_logic;
+    fmc_imageon_vita_receiver_0_io_vita_reset_n_pin : out std_logic;
+    fmc_imageon_vita_receiver_0_io_vita_trigger_pin : out std_logic_vector(2 downto 0);
+    fmc_imageon_vita_receiver_0_io_vita_monitor_pin : in std_logic_vector(1 downto 0);
+    fmc_imageon_vita_receiver_0_io_vita_spi_sclk_pin : out std_logic;
+    fmc_imageon_vita_receiver_0_io_vita_spi_ssel_n_pin : out std_logic;
+    fmc_imageon_vita_receiver_0_io_vita_spi_mosi_pin : out std_logic;
+    fmc_imageon_vita_receiver_0_io_vita_spi_miso_pin : in std_logic;
+    fmc_imageon_vita_receiver_0_io_vita_clk_out_p_pin : in std_logic;
+    fmc_imageon_vita_receiver_0_io_vita_clk_out_n_pin : in std_logic;
+    fmc_imageon_vita_receiver_0_io_vita_sync_p_pin : in std_logic;
+    fmc_imageon_vita_receiver_0_io_vita_sync_n_pin : in std_logic;
+    fmc_imageon_vita_receiver_0_io_vita_data_p_pin : in std_logic_vector(7 downto 0);
+    fmc_imageon_vita_receiver_0_io_vita_data_n_pin : in std_logic_vector(7 downto 0)
   );
 end system_stub;
 
@@ -40,9 +63,6 @@ architecture STRUCTURE of system_stub is
 
   component system is
     port (
-      SWs_8Bits_TRI_IO : inout std_logic_vector(7 downto 0);
-      LEDs_8Bits_TRI_IO : out std_logic_vector(7 downto 0);
-      BTNs_5Bits_TRI_IO : inout std_logic_vector(4 downto 0);
       processing_system7_0_MIO : inout std_logic_vector(53 downto 0);
       processing_system7_0_PS_SRSTB : in std_logic;
       processing_system7_0_PS_CLK : in std_logic;
@@ -63,7 +83,33 @@ architecture STRUCTURE of system_stub is
       processing_system7_0_DDR_DQS : inout std_logic_vector(3 downto 0);
       processing_system7_0_DDR_DQS_n : inout std_logic_vector(3 downto 0);
       processing_system7_0_DDR_VRN : inout std_logic;
-      processing_system7_0_DDR_VRP : inout std_logic
+      processing_system7_0_DDR_VRP : inout std_logic;
+      IIC_FMC_SCL : inout std_logic;
+      IIC_FMC_SDA : inout std_logic;
+      fmc_imageon_hdmi_in_0_io_hdmii_spdif_pin : in std_logic;
+      fmc_imageon_hdmi_out_0_io_hdmio_spdif_pin : out std_logic;
+      fmc_imageon_hdmi_out_0_io_hdmio_video_pin : out std_logic_vector(15 downto 0);
+      fmc_imageon_hdmi_out_0_io_hdmio_clk_pin : out std_logic;
+      fmc_imageon_video_clk1 : in std_logic;
+      fmc_imageon_iic_0_Rst_pin : out std_logic;
+      fmc_imageon_iic_0_Sda_pin : inout std_logic;
+      fmc_imageon_iic_0_Scl_pin : inout std_logic;
+      BTNs_5Bits_GPIO : inout std_logic_vector(4 downto 0);
+      SWs_8Bits_GPIO : inout std_logic_vector(7 downto 0);
+      fmc_imageon_vita_receiver_0_io_vita_clk_pll_pin : out std_logic;
+      fmc_imageon_vita_receiver_0_io_vita_reset_n_pin : out std_logic;
+      fmc_imageon_vita_receiver_0_io_vita_trigger_pin : out std_logic_vector(2 downto 0);
+      fmc_imageon_vita_receiver_0_io_vita_monitor_pin : in std_logic_vector(1 downto 0);
+      fmc_imageon_vita_receiver_0_io_vita_spi_sclk_pin : out std_logic;
+      fmc_imageon_vita_receiver_0_io_vita_spi_ssel_n_pin : out std_logic;
+      fmc_imageon_vita_receiver_0_io_vita_spi_mosi_pin : out std_logic;
+      fmc_imageon_vita_receiver_0_io_vita_spi_miso_pin : in std_logic;
+      fmc_imageon_vita_receiver_0_io_vita_clk_out_p_pin : in std_logic;
+      fmc_imageon_vita_receiver_0_io_vita_clk_out_n_pin : in std_logic;
+      fmc_imageon_vita_receiver_0_io_vita_sync_p_pin : in std_logic;
+      fmc_imageon_vita_receiver_0_io_vita_sync_n_pin : in std_logic;
+      fmc_imageon_vita_receiver_0_io_vita_data_p_pin : in std_logic_vector(7 downto 0);
+      fmc_imageon_vita_receiver_0_io_vita_data_n_pin : in std_logic_vector(7 downto 0)
     );
   end component;
 
@@ -74,9 +120,6 @@ begin
 
   system_i : system
     port map (
-      SWs_8Bits_TRI_IO => SWs_8Bits_TRI_IO,
-      LEDs_8Bits_TRI_IO => LEDs_8Bits_TRI_IO,
-      BTNs_5Bits_TRI_IO => BTNs_5Bits_TRI_IO,
       processing_system7_0_MIO => processing_system7_0_MIO,
       processing_system7_0_PS_SRSTB => processing_system7_0_PS_SRSTB,
       processing_system7_0_PS_CLK => processing_system7_0_PS_CLK,
@@ -97,7 +140,33 @@ begin
       processing_system7_0_DDR_DQS => processing_system7_0_DDR_DQS,
       processing_system7_0_DDR_DQS_n => processing_system7_0_DDR_DQS_n,
       processing_system7_0_DDR_VRN => processing_system7_0_DDR_VRN,
-      processing_system7_0_DDR_VRP => processing_system7_0_DDR_VRP
+      processing_system7_0_DDR_VRP => processing_system7_0_DDR_VRP,
+      IIC_FMC_SCL => IIC_FMC_SCL,
+      IIC_FMC_SDA => IIC_FMC_SDA,
+      fmc_imageon_hdmi_in_0_io_hdmii_spdif_pin => fmc_imageon_hdmi_in_0_io_hdmii_spdif_pin,
+      fmc_imageon_hdmi_out_0_io_hdmio_spdif_pin => fmc_imageon_hdmi_out_0_io_hdmio_spdif_pin,
+      fmc_imageon_hdmi_out_0_io_hdmio_video_pin => fmc_imageon_hdmi_out_0_io_hdmio_video_pin,
+      fmc_imageon_hdmi_out_0_io_hdmio_clk_pin => fmc_imageon_hdmi_out_0_io_hdmio_clk_pin,
+      fmc_imageon_video_clk1 => fmc_imageon_video_clk1,
+      fmc_imageon_iic_0_Rst_pin => fmc_imageon_iic_0_Rst_pin,
+      fmc_imageon_iic_0_Sda_pin => fmc_imageon_iic_0_Sda_pin,
+      fmc_imageon_iic_0_Scl_pin => fmc_imageon_iic_0_Scl_pin,
+      BTNs_5Bits_GPIO => BTNs_5Bits_GPIO,
+      SWs_8Bits_GPIO => SWs_8Bits_GPIO,
+      fmc_imageon_vita_receiver_0_io_vita_clk_pll_pin => fmc_imageon_vita_receiver_0_io_vita_clk_pll_pin,
+      fmc_imageon_vita_receiver_0_io_vita_reset_n_pin => fmc_imageon_vita_receiver_0_io_vita_reset_n_pin,
+      fmc_imageon_vita_receiver_0_io_vita_trigger_pin => fmc_imageon_vita_receiver_0_io_vita_trigger_pin,
+      fmc_imageon_vita_receiver_0_io_vita_monitor_pin => fmc_imageon_vita_receiver_0_io_vita_monitor_pin,
+      fmc_imageon_vita_receiver_0_io_vita_spi_sclk_pin => fmc_imageon_vita_receiver_0_io_vita_spi_sclk_pin,
+      fmc_imageon_vita_receiver_0_io_vita_spi_ssel_n_pin => fmc_imageon_vita_receiver_0_io_vita_spi_ssel_n_pin,
+      fmc_imageon_vita_receiver_0_io_vita_spi_mosi_pin => fmc_imageon_vita_receiver_0_io_vita_spi_mosi_pin,
+      fmc_imageon_vita_receiver_0_io_vita_spi_miso_pin => fmc_imageon_vita_receiver_0_io_vita_spi_miso_pin,
+      fmc_imageon_vita_receiver_0_io_vita_clk_out_p_pin => fmc_imageon_vita_receiver_0_io_vita_clk_out_p_pin,
+      fmc_imageon_vita_receiver_0_io_vita_clk_out_n_pin => fmc_imageon_vita_receiver_0_io_vita_clk_out_n_pin,
+      fmc_imageon_vita_receiver_0_io_vita_sync_p_pin => fmc_imageon_vita_receiver_0_io_vita_sync_p_pin,
+      fmc_imageon_vita_receiver_0_io_vita_sync_n_pin => fmc_imageon_vita_receiver_0_io_vita_sync_n_pin,
+      fmc_imageon_vita_receiver_0_io_vita_data_p_pin => fmc_imageon_vita_receiver_0_io_vita_data_p_pin,
+      fmc_imageon_vita_receiver_0_io_vita_data_n_pin => fmc_imageon_vita_receiver_0_io_vita_data_n_pin
     );
 
 end architecture STRUCTURE;

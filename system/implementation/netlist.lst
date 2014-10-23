@@ -1,7 +1,21 @@
-/tmp/cpre488-vens/MP-3/system/implementation/system.ngc 1413409947
-/tmp/cpre488-vens/MP-3/system/implementation/system_processing_system7_0_wrapper.ngc 1413409922
-/tmp/cpre488-vens/MP-3/system/implementation/system_axi4lite_0_wrapper.ngc 1413409930
-/tmp/cpre488-vens/MP-3/system/implementation/system_sws_8bits_wrapper.ngc 1413409876
-/tmp/cpre488-vens/MP-3/system/implementation/system_leds_8bits_wrapper.ngc 1413409891
-/tmp/cpre488-vens/MP-3/system/implementation/system_btns_5bits_wrapper.ngc 1413409905
+/tmp/488/MP-3/system/implementation/system.ngc 1414024459
+/tmp/488/MP-3/system/implementation/system_fmc_imageon_vita_receiver_0_wrapper.ngc 1414024342
+/tmp/488/MP-3/system/implementation/system_processing_system7_0_wrapper.ngc 1414023220
+/tmp/488/MP-3/system/implementation/system_fmc_imageon_hdmi_out_0_wrapper.ngc 1414023334
+/tmp/488/MP-3/system/implementation/system_clock_generator_1_wrapper.ngc 1414024349
+/tmp/488/MP-3/system/implementation/system_v_vid_in_axi4s_0_wrapper.ngc 1414022923
+/tmp/488/MP-3/system/implementation/system_axi4lite_0_wrapper.ngc 1414024373
+/tmp/488/MP-3/system/implementation/system_axi_interconnect_1_wrapper.ngc 1414024365
+/tmp/488/MP-3/system/implementation/system_v_tc_1_wrapper.ngc 1414022978
+/tmp/488/MP-3/system/implementation/system_v_tc_0_wrapper.ngc 1414023038
+/tmp/488/MP-3/system/implementation/system_v_rgb2ycrcb_0_wrapper.ngc 1414024326
+/tmp/488/MP-3/system/implementation/system_v_cresample_0_wrapper.ngc 1414024334
+/tmp/488/MP-3/system/implementation/system_v_cfa_0_wrapper.ngc 1414023190
+/tmp/488/MP-3/system/implementation/system_v_axi4s_vid_out_0_wrapper.ngc 1414023203
+/tmp/488/MP-3/system/implementation/system_axi_vdma_0_wrapper.ngc 1414024357
+/tmp/488/MP-3/system/implementation/system_axi_tpg_0_wrapper.ngc 1414023887
+/tmp/488/MP-3/system/implementation/system_fmc_imageon_iic_0_wrapper.ngc 1414023322
+/tmp/488/MP-3/system/implementation/system_sws_8bits_wrapper.ngc 1414022908
+/tmp/488/MP-3/system/implementation/system_iic_fmc_wrapper.ngc 1414024319
+/tmp/488/MP-3/system/implementation/system_btns_5bits_wrapper.ngc 1414022908
 OK

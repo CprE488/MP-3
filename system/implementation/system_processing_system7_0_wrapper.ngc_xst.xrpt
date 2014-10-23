@@ -5,7 +5,7 @@
     The structure and the elements are likely to change over the next few releases.
     This means code written to parse this file will need to be revisited each subsequent release.-->
 
-  <application stringID="Xst" timeStamp="Wed Oct 15 16:51:47 2014">
+  <application stringID="Xst" timeStamp="Wed Oct 22 19:13:25 2014">
     <section stringID="User_Env">
       <table stringID="User_EnvVar">
         <column stringID="variable"/>
@@ -47,17 +47,17 @@
         <item stringID="User_EnvOsname" value="RedHatEnterpriseWorkstation"/>
         <item stringID="User_EnvOsrelease" value="Red Hat Enterprise Linux Workstation release 6.6 (Santiago)"/>
       </item>
-      <item stringID="User_EnvHost" value="research-1.ece.iastate.edu"/>
+      <item stringID="User_EnvHost" value="research-5.ece.iastate.edu"/>
       <table stringID="User_EnvCpu">
         <column stringID="arch"/>
         <column stringID="speed"/>
         <row stringID="row" value="0">
-          <item stringID="arch" value="Intel(R) Xeon(R) CPU           X5550  @ 2.67GHz"/>
-          <item stringID="speed" value="2659.983 MHz"/>
+          <item stringID="arch" value="Intel(R) Xeon(R) CPU           X5650  @ 2.67GHz"/>
+          <item stringID="speed" value="2661.000 MHz"/>
         </row>
         <row stringID="row" value="1">
-          <item stringID="arch" value="Intel(R) Xeon(R) CPU           X5550  @ 2.67GHz"/>
-          <item stringID="speed" value="2659.983 MHz"/>
+          <item stringID="arch" value="Intel(R) Xeon(R) CPU           X5650  @ 2.67GHz"/>
+          <item stringID="speed" value="1596.000 MHz"/>
         </row>
       </table>
     </section>
@@ -73,7 +73,7 @@
       <item DEFAULT="/" stringID="XST_HIERARCHYSEPARATOR" value="/"/>
       <item DEFAULT="Yes" label="-iobuf" stringID="XST_IOBUF" value="NO"/>
       <item DEFAULT="" label="-sd" stringID="XST_SD" value="{../implementation}"/>
-      <item DEFAULT="" label="-vlgincdir" stringID="XST_VLGINCDIR" value="{&quot;/tmp/cpre488-vens/MP-3/system/pcores/&quot; &quot;/remote/Xilinx/14.6/EDK/hw/XilinxBFMinterface/pcores/&quot; &quot;/remote/Xilinx/14.6/EDK/hw/XilinxProcessorIPLib/pcores/&quot; }"/>
+      <item DEFAULT="" label="-vlgincdir" stringID="XST_VLGINCDIR" value="{&quot;/tmp/488/MP-3/system/pcores/&quot; &quot;/tmp/488/MP-3/repository/ProcessorIPLib/pcores/&quot; &quot;/remote/Xilinx/14.6/EDK/hw/XilinxBFMinterface/pcores/&quot; &quot;/remote/Xilinx/14.6/EDK/hw/XilinxProcessorIPLib/pcores/&quot; }"/>
     </section>
     <section stringID="XST_UNISIM_SUMMARY">
       <item dataType="int" stringID="XST_NUM_BUFG" value="1"/>
@@ -95,8 +95,8 @@
           <item dataType="int" stringID="XST_GND" value="1"/>
           <item dataType="int" stringID="XST_INV" value="89"/>
         </item>
-        <item dataType="int" stringID="XST_CLOCK_BUFFERS" value="1">
-          <item dataType="int" label="-bufg" stringID="XST_BUFG" value="1"/>
+        <item dataType="int" stringID="XST_CLOCK_BUFFERS" value="3">
+          <item dataType="int" label="-bufg" stringID="XST_BUFG" value="3"/>
         </item>
         <item dataType="int" stringID="XST_OTHERS" value="1"></item>
       </section>
@@ -110,9 +110,9 @@
       <item AVAILABLE="89" dataType="int" label="Number with an unused LUT" stringID="XST_NUMBER_WITH_AN_UNUSED_LUT" value="0"/>
       <item AVAILABLE="89" dataType="int" label="Number of fully used LUT-FF pairs" stringID="XST_NUMBER_OF_FULLY_USED_LUTFF_PAIRS" value="0"/>
       <item dataType="int" label="Number of unique control sets" stringID="XST_NUMBER_OF_UNIQUE_CONTROL_SETS" value="0"/>
-      <item dataType="int" label="Number of IOs" stringID="XST_NUMBER_OF_IOS" value="3308"/>
+      <item dataType="int" label="Number of IOs" stringID="XST_NUMBER_OF_IOS" value="3283"/>
       <item AVAILABLE="200" dataType="int" label="Number of bonded IOBs" stringID="XST_NUMBER_OF_BONDED_IOBS" value="0"/>
-      <item AVAILABLE="32" dataType="int" label="Number of BUFG/BUFGCTRLs" stringID="XST_NUMBER_OF_BUFGBUFGCTRLS" value="1"/>
+      <item AVAILABLE="32" dataType="int" label="Number of BUFG/BUFGCTRLs" stringID="XST_NUMBER_OF_BUFGBUFGCTRLS" value="3"/>
     </section>
     <section stringID="XST_PARTITION_RESOURCE_SUMMARY">
       <section stringID="XST_NO_PARTITIONS_WERE_FOUND_IN_THIS_DESIGN"/>

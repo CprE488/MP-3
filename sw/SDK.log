@@ -23,3 +23,20 @@
 		 /tmp/cpre488-vens/MP-3/repository/ProcessorIPLib
 		 /tmp/cpre488-vens/MP-3/repository 
 17:27:59.544 INFO  - Processing command line option -hwspec /tmp/cpre488-vens/MP-3/system/SDK/SDK_Export/hw/system.xml. 
+20:06:41.785 INFO  - Processing command line option -hwspec /tmp/488/MP-3/system/SDK/SDK_Export/hw/system.xml. 
+20:06:43.548 INFO  - The hardware specification for project 'system_hw_platform' is different from /tmp/488/MP-3/system/SDK/SDK_Export/hw/system.xml. 
+20:06:43.562 INFO  - Copied contents of /tmp/488/MP-3/system/SDK/SDK_Export/hw/system.xml into /system_hw_platform/system.xml. 
+20:06:43.597 INFO  - Copied contents of /tmp/488/MP-3/system/SDK/SDK_Export/hw/system.bit into /system_hw_platform/system.bit. 
+20:06:43.713 INFO  - Copied contents of /tmp/488/MP-3/system/SDK/SDK_Export/hw/ps7_init.c into /system_hw_platform/ps7_init.c. 
+20:06:43.739 INFO  - Copied contents of /tmp/488/MP-3/system/SDK/SDK_Export/hw/ps7_init.h into /system_hw_platform/ps7_init.h. 
+20:06:43.747 INFO  - Copied contents of /tmp/488/MP-3/system/SDK/SDK_Export/hw/ps7_init.html into /system_hw_platform/ps7_init.html. 
+20:06:43.755 INFO  - Copied contents of /tmp/488/MP-3/system/SDK/SDK_Export/hw/ps7_init.tcl into /system_hw_platform/ps7_init.tcl. 
+20:06:44.513 INFO  - Synchronizing projects in the workspace with the hardware platform specification changes. 
+20:06:47.554 INFO  - Restoring local repository preferences: 
+		 /tmp/cpre488-vens/MP-3/repository/ProcessorIPLib
+		 /tmp/cpre488-vens/MP-3/repository 
+20:07:39.099 INFO  - Processing command line option -hwspec /tmp/488/MP-3/system/SDK/SDK_Export/hw/system.xml. 
+20:08:18.703 INFO  - Restoring local repository preferences: 
+		 /tmp/cpre488-vens/MP-3/repository/ProcessorIPLib
+		 /tmp/cpre488-vens/MP-3/repository 
+20:08:18.753 ERROR - Unable to read in MSS file /tmp/488/MP-3/sw/device-tree_bsp_0/system.mss. 

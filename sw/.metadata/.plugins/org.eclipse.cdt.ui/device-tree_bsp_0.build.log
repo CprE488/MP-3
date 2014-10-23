@@ -1,4 +1,4 @@
-17:27:57 **** Build of project device-tree_bsp_0 ****
+20:06:44 **** Auto Build of project device-tree_bsp_0 ****
 make -k all 
 libgen -hw ../system_hw_platform/system.xml\
 	       -lp /tmp/cpre488-vens/MP-3/repository/ProcessorIPLib -lp ../../repository\
@@ -13,147 +13,11 @@ Command Line: libgen -hw ../system_hw_platform/system.xml -lp
 /tmp/cpre488-vens/MP-3/repository/ProcessorIPLib -lp ../../repository -pe
 ps7_cortexa9_0 -log libgen.log system.mss 
 
+ERROR:EDK:410 - gpio - /tmp/488/MP-3/sw/device-tree_bsp_0/system.mss line 27 -
+   No IP instance named leds_8bits is present in the hardware!
+ERROR:EDK:1206 - Errors occured while parsing MSS file.
+make: *** [ps7_cortexa9_0/lib/libxil.a] Error 2
+make: Target `all' not remade because of errors.
 
-Staging source files.
-Running DRCs.
-#--------------------------------------
-# device-tree BSP DRC...
-#--------------------------------------
-Running generate.
-#--------------------------------------
-# device-tree BSP generate...
-#--------------------------------------
---- device tree generator version: v1.1 ---
-generating xilinx.dts
-Clock Port Summary:
-axi4lite_0.interconnect_aclk connected to processing_system7_0_FCLK_CLK0:
-    CLK_FREQ_HZ = 100000000
-axi4lite_0.S_AXI_ACLK connected to axi4lite_0_S_ACLK:
-    CLK_FREQ_HZ = WARNING: no frequency found!
-axi4lite_0.M_AXI_ACLK connected to axi4lite_0_M_ACLK:
-    CLK_FREQ_HZ = WARNING: no frequency found!
-sws_8bits.S_AXI_ACLK connected to processing_system7_0_FCLK_CLK0:
-    CLK_FREQ_HZ = 100000000
-leds_8bits.S_AXI_ACLK connected to processing_system7_0_FCLK_CLK0:
-    CLK_FREQ_HZ = 100000000
-btns_5bits.S_AXI_ACLK connected to processing_system7_0_FCLK_CLK0:
-    CLK_FREQ_HZ = 100000000
-ps7_axi_interconnect_0.M_AXI_GP0_ACLK connected to
-processing_system7_0_FCLK_CLK0:
-    CLK_FREQ_HZ = WARNING: no frequency found!
-ps7_axi_interconnect_0.M_AXI_GP1_ACLK connected to
-ps7_axi_interconnect_0_M_AXI_GP1_ACLK:
-    CLK_FREQ_HZ = WARNING: no frequency found!
-ps7_axi_interconnect_0.S_AXI_HP1_ACLK connected to
-ps7_axi_interconnect_0_S_AXI_HP1_ACLK:
-    CLK_FREQ_HZ = WARNING: no frequency found!
-ps7_axi_interconnect_0.S_AXI_ACP_ACLK connected to
-ps7_axi_interconnect_0_S_AXI_ACP_ACLK:
-    CLK_FREQ_HZ = WARNING: no frequency found!
-ps7_axi_interconnect_0.S_AXI_GP1_ACLK connected to
-ps7_axi_interconnect_0_S_AXI_GP1_ACLK:
-    CLK_FREQ_HZ = WARNING: no frequency found!
-ps7_axi_interconnect_0.S_AXI_GP0_ACLK connected to
-ps7_axi_interconnect_0_S_AXI_GP0_ACLK:
-    CLK_FREQ_HZ = WARNING: no frequency found!
-ps7_axi_interconnect_0.S_AXI_HP3_ACLK connected to
-ps7_axi_interconnect_0_S_AXI_HP3_ACLK:
-    CLK_FREQ_HZ = WARNING: no frequency found!
-ps7_axi_interconnect_0.S_AXI_HP2_ACLK connected to
-ps7_axi_interconnect_0_S_AXI_HP2_ACLK:
-    CLK_FREQ_HZ = WARNING: no frequency found!
-ps7_axi_interconnect_0.S_AXI_HP0_ACLK connected to
-ps7_axi_interconnect_0_S_AXI_HP0_ACLK:
-    CLK_FREQ_HZ = WARNING: no frequency found!
-ps7_axi_interconnect_0.S_AXI_ACLK connected to ps7_axi_interconnect_0_S_ACLK:
-    CLK_FREQ_HZ = WARNING: no frequency found!
-ps7_axi_interconnect_0.M_AXI_ACLK connected to ps7_axi_interconnect_0_M_ACLK:
-    CLK_FREQ_HZ = WARNING: no frequency found!
-IP connected to bus: ps7_axi_interconnect_0
--master M_AXI_DP ps7_axi_interconnect_0 ps7_cortexa9_0
--master M_AXI_DP ps7_axi_interconnect_0 ps7_cortexa9_1
--slave S_AXI ps7_axi_interconnect_0 ps7_uart_1
--slave S_AXI ps7_axi_interconnect_0 ps7_afi_0
--slave S_AXI ps7_axi_interconnect_0 ps7_afi_1
--slave S_AXI ps7_axi_interconnect_0 ps7_afi_2
--slave S_AXI ps7_axi_interconnect_0 ps7_afi_3
--slave S_AXI ps7_axi_interconnect_0 ps7_sd_0
--slave S_AXI ps7_axi_interconnect_0 ps7_ttc_0
--slave S_AXI ps7_axi_interconnect_0 ps7_ethernet_0
--slave S_AXI ps7_axi_interconnect_0 ps7_usb_0
--slave S_AXI ps7_axi_interconnect_0 ps7_qspi_0
--slave S_AXI ps7_axi_interconnect_0 ps7_qspi_linear_0
--slave S_AXI ps7_axi_interconnect_0 ps7_ddr_0
--slave S_AXI ps7_axi_interconnect_0 ps7_gpio_0
--slave S_AXI ps7_axi_interconnect_0 ps7_ddrc_0
--slave S_AXI ps7_axi_interconnect_0 ps7_dev_cfg_0
--slave S_AXI_LITE ps7_axi_interconnect_0 ps7_dma_s
--slave S_AXI ps7_axi_interconnect_0 ps7_iop_bus_config_0
--slave S_AXI ps7_axi_interconnect_0 ps7_ram_0
--slave S_AXI ps7_axi_interconnect_0 ps7_ram_1
--slave S_AXI ps7_axi_interconnect_0 ps7_scugic_0
--slave S_AXI ps7_axi_interconnect_0 ps7_scutimer_0
--slave S_AXI ps7_axi_interconnect_0 ps7_scuwdt_0
--slave S_AXI ps7_axi_interconnect_0 ps7_slcr_0
--slave S_AXI_LITE ps7_axi_interconnect_0 ps7_dma_ns
--slave btns_5bits
--slave leds_8bits
--slave ps7_afi_0
-IP 57053008 ps7_afi_0 is already appended - skip it
--slave ps7_afi_1
-IP 57053312 ps7_afi_1 is already appended - skip it
--slave ps7_afi_2
-IP 57055264 ps7_afi_2 is already appended - skip it
--slave ps7_afi_3
-IP 57055664 ps7_afi_3 is already appended - skip it
--slave ps7_ddr_0
-IP 57058464 ps7_ddr_0 is already appended - skip it
--slave ps7_ddrc_0
-IP 57059664 ps7_ddrc_0 is already appended - skip it
--slave ps7_dev_cfg_0
-IP 57060064 ps7_dev_cfg_0 is already appended - skip it
--slave ps7_dma_ns
--slave ps7_dma_s
-IP 57060464 ps7_dma_s is already appended - skip it
--slave ps7_ethernet_0
-IP 57056864 ps7_ethernet_0 is already appended - skip it
--slave ps7_gpio_0
-IP 57058864 ps7_gpio_0 is already appended - skip it
--slave ps7_iop_bus_config_0
-IP 57060864 ps7_iop_bus_config_0 is already appended - skip it
--slave ps7_qspi_0
-IP 57057664 ps7_qspi_0 is already appended - skip it
--slave ps7_qspi_linear_0
-IP 57058064 ps7_qspi_linear_0 is already appended - skip it
--slave ps7_ram_0
-IP 57061264 ps7_ram_0 is already appended - skip it
--slave ps7_ram_1
-IP 57061664 ps7_ram_1 is already appended - skip it
--slave ps7_scugic_0
-IP 57062064 ps7_scugic_0 is already appended - skip it
--slave ps7_scutimer_0
-IP 57062464 ps7_scutimer_0 is already appended - skip it
--slave ps7_scuwdt_0
-IP 57062864 ps7_scuwdt_0 is already appended - skip it
--slave ps7_sd_0
-IP 57056064 ps7_sd_0 is already appended - skip it
--slave ps7_slcr_0
-IP 57063264 ps7_slcr_0 is already appended - skip it
--slave ps7_ttc_0
-IP 57056464 ps7_ttc_0 is already appended - skip it
--slave ps7_uart_1
-IP 57052752 ps7_uart_1 is already appended - skip it
--slave ps7_usb_0
-IP 57057264 ps7_usb_0 is already appended - skip it
--slave sws_8bits
-ps7_afi_0
-ps7_afi_1
-ps7_afi_2
-ps7_afi_3
-{serial0 aliasref ps7_uart_1 0} {ethernet0 aliasref ps7_ethernet_0 0}
-Running post_generate.
-Running execs_generate.
-Finished building libraries
-
-17:27:59 Build Finished (took 2s.271ms)
+20:06:45 Build Finished (took 1s.852ms)
 

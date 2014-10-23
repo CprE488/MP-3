@@ -35,7 +35,7 @@ all: zynq_fsbl.elf secondary-outputs
 zynq_fsbl.elf: $(OBJS) ../src/lscript.ld $(USER_OBJS)
 	@echo 'Building target: $@'
 	@echo 'Invoking: ARM gcc linker'
-	arm-xilinx-eabi-gcc -L"/tmp/cpre488-vens/MP-3/sw/zynq_fsbl/src" -Wl,-T -Wl,../src/lscript.ld -L../../zynq_fsbl_bsp/ps7_cortexa9_0/lib -o "zynq_fsbl.elf" $(OBJS) $(USER_OBJS) $(LIBS)
+	arm-xilinx-eabi-gcc -L"/tmp/488/MP-3/sw/zynq_fsbl/src" -Wl,-T -Wl,../src/lscript.ld -L../../zynq_fsbl_bsp/ps7_cortexa9_0/lib -o "zynq_fsbl.elf" $(OBJS) $(USER_OBJS) $(LIBS)
 	@echo 'Finished building target: $@'
 	@echo ' '
 

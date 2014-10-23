@@ -4,6 +4,8 @@ xc7z020clg484-1
 vhdl
 -intstyle
 default
+-lp
+/tmp/488/MP-3/repository/
 -msg
 __xps/ise/xmsgprops.lst
 system.mhs

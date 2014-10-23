@@ -59,6 +59,10 @@ struct launcher {
 	size_t			bulk_in_copied;		/* already copied to user space */
 	__u8			bulk_in_endpointAddr;	/* the address of the bulk in endpoint */
 	__u8			bulk_out_endpointAddr;	/* the address of the bulk out endpoint */
+    __u8            interrupt_in_endpointAddr;  /* the address of the interrupt in endpoint */
+    __u8            interrupt_out_endpointAddr; /* the address of the interrupt out endpoint */
+    __u8            control_in_endpointAddr;    /* the address of the control in endpoint */
+    __u8            control_out_endpointAddr;   /* the address of the control out endpoint */
 	int			errors;			/* the last request tanked */
 	bool			ongoing_read;		/* a read is going on */
 	bool			processed_urb;		/* indicates we haven't processed the urb */
@@ -89,6 +93,8 @@ static int launcher_open(struct inode *inode, struct file *file)
 	int subminor;
 	int retval = 0;
 
+    printk("opening file\n");
+    
 	subminor = iminor(inode);
 
 	interface = usb_find_interface(&launcher_driver, subminor);
@@ -380,9 +386,9 @@ static ssize_t launcher_write(struct file *file, const char *user_buffer,
 			  size_t count, loff_t *ppos)
 {
 	struct launcher *dev;
-	int retval = 0;
+	int retval = 0, i;
 	struct urb *urb = NULL;
-	char *buf = NULL;
+	char buf[LAUNCHER_CTRL_BUFFER_SIZE];
 	size_t writesize = min(count, (size_t)MAX_TRANSFER);
 
 	dev = file->private_data;
@@ -420,23 +426,38 @@ static ssize_t launcher_write(struct file *file, const char *user_buffer,
 		goto error;
 
 	/* create a urb, and a buffer for it, and copy the data to the urb */
-	urb = usb_alloc_urb(0, GFP_KERNEL);
+	/*urb = usb_alloc_urb(0, GFP_KERNEL);
 	if (!urb) {
 		retval = -ENOMEM;
 		goto error;
-	}
+	}*/
 
-	buf = usb_alloc_coherent(dev->udev, writesize, GFP_KERNEL,
-				 &urb->transfer_dma);
-	if (!buf) {
-		retval = -ENOMEM;
-		goto error;
-	}
+	//buf = usb_alloc_coherent(dev->udev, LAUNCHER_CTRL_BUFFER_SIZE, GFP_KERNEL,
+	//			 &urb->transfer_dma);
+    
+    //if (!buf) {
+	//	retval = -ENOMEM;
+	//	goto error;
+	//}
 
-	if (copy_from_user(buf, user_buffer, writesize)) {
+    for(i = 0; i < LAUNCHER_CTRL_BUFFER_SIZE; i++)
+    {
+        buf[i] = 0;
+    }
+
+    buf[0] = LAUNCHER_CTRL_COMMAND_PREFIX;
+
+    printk("user buffer = %s\n", user_buffer);
+
+    buf[1] = user_buffer[0];
+
+	/*if (copy_from_user(&buf[1], user_buffer, 1)) {
 		retval = -EFAULT;
 		goto error;
-	}
+	}*/
+
+    printk("buffer = 0x%02X %02X %02X %02X %02X %02X %02X %02X\n", 
+        buf[0], buf[1], buf[2], buf[3], buf[4], buf[5], buf[6], buf[7]);
 
 	/* this lock makes sure we don't submit URBs to gone devices */
 	mutex_lock(&dev->io_mutex);
@@ -447,30 +468,38 @@ static ssize_t launcher_write(struct file *file, const char *user_buffer,
 	}
 
 	/* initialize the urb properly */
-	usb_fill_bulk_urb(urb, dev->udev,
+    //usb_fill_control_urb(urb, dev->udev,
+    //    usb_sndctrlpipe(dev->udev, 0), /*TODO setup packet as argument*/
+    //    buf, writesize, launcher_write_ctr
+
+
+	/*usb_fill_bulk_urb(urb, dev->udev,
 			  usb_sndbulkpipe(dev->udev, dev->bulk_out_endpointAddr),
 			  buf, writesize, launcher_write_bulk_callback, dev);
 	urb->transfer_flags |= URB_NO_TRANSFER_DMA_MAP;
-	usb_anchor_urb(urb, &dev->submitted);
+	usb_anchor_urb(urb, &dev->submitted);*/
 
 	/* send the data out the bulk port */
-	retval = usb_submit_urb(urb, GFP_KERNEL);
+	//retval = usb_submit_urb(urb, GFP_KERNEL);
+    retval = usb_control_msg(dev->udev, usb_sndctrlpipe(dev->udev, 0), LAUNCHER_CTRL_REQUEST, 
+        LAUNCHER_CTRL_REQUEST_TYPE, LAUNCHER_CTRL_VALUE, LAUNCHER_CTRL_INDEX, buf, 
+        LAUNCHER_CTRL_BUFFER_SIZE, 0);
 	mutex_unlock(&dev->io_mutex);
-	if (retval) {
+	if (retval < 0) {
 		dev_err(&dev->interface->dev,
 			"%s - failed submitting write urb, error %d\n",
 			__func__, retval);
 		goto error_unanchor;
 	}
 
+    up(&dev->limit_sem);
+
 	/*
 	 * release our reference to this urb, the USB core will eventually free
 	 * it entirely
 	 */
-	usb_free_urb(urb);
 
-
-	return writesize;
+	return 1;
 
 error_unanchor:
 	usb_unanchor_urb(urb);
@@ -536,16 +565,29 @@ static int launcher_probe(struct usb_interface *interface,
 	iface_desc = interface->cur_altsetting;
 	for (i = 0; i < iface_desc->desc.bNumEndpoints; ++i) {
 		endpoint = &iface_desc->endpoint[i].desc;
-		if (!dev->control_in_endpointAddr &&
+		/*if (!dev->control_in_endpointAddr &&
 		    usb_endpoint_is_control_in(endpoint)) {
-			kprintf("Found control in endpoint @ i=%d\n", i);
+			printk("Found control in endpoint @ i=%d\n", i);
 		}
 		
-		//if (!dev->
+		if (!dev->control_out_endpointAddr &&
+            usb_endpoint_is_control_out(endpoint)) {
+            printk("Found control out endpoint @ i=%d\n", i);
+        }*/
+
+        if(!dev->interrupt_in_endpointAddr &&
+            usb_endpoint_is_int_in(endpoint)) {
+            printk("Found interrupt in endpoint @ i=%d\n", i);
+        }
+
+        if(!dev->interrupt_out_endpointAddr &&
+            usb_endpoint_is_int_out(endpoint)) {
+            printk("Found interrupt out endpoint @ i=%d\n", i);
+        }
 
 		if (!dev->bulk_in_endpointAddr &&
 		    usb_endpoint_is_bulk_in(endpoint)) {
-			kprintf("Found bulk in endpoint @ i=%d\n", i);
+			printk("Found bulk in endpoint @ i=%d\n", i);
 			/* we found a bulk in endpoint */
 			buffer_size = usb_endpoint_maxp(endpoint);
 			dev->bulk_in_size = buffer_size;
@@ -566,7 +608,7 @@ static int launcher_probe(struct usb_interface *interface,
 
 		if (!dev->bulk_out_endpointAddr &&
 		    usb_endpoint_is_bulk_out(endpoint)) {
-			kprintf("Found bulk out endpoint @ i=%d\n", i);
+			printk("Found bulk out endpoint @ i=%d\n", i);
 			/* we found a bulk out endpoint */
 			dev->bulk_out_endpointAddr = endpoint->bEndpointAddress;
 		}
