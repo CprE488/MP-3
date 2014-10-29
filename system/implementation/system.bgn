@@ -7,7 +7,7 @@ Loading device for application Rf_Device from file '7z020.nph' in environment
    "system" is an NCD, version 3.2, device xc7z020, package clg484, speed -1
 Opened constraints file system.pcf.
 
-Wed Oct 22 20:04:12 2014
+Mon Oct 27 19:26:42 2014
 
 /remote/Xilinx/14.6/ISE/bin/lin64/unwrapped/bitgen -w system.ncd 
 

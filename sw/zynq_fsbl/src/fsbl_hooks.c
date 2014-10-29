@@ -148,6 +148,8 @@ u32 FsblHookBeforeHandoff(void)
 	 */
 	fsbl_printf(DEBUG_INFO,"In FsblHookBeforeHandoff function \r\n");
 
+	camera_main();
+
 	return (Status);
 }
 

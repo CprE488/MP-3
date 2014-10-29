@@ -1,0 +1,236 @@
+Release 14.6 - libgen Xilinx EDK 14.6 Build EDK_P.68d
+ (lin64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+
+Command Line: libgen -hw ../system_hw_platform/system.xml -lp
+/tmp/cpre488_vens/MP-3/repository/ProcessorIPLib -lp ../../repository -pe
+ps7_cortexa9_0 -log libgen.log system.mss 
+
+
+Staging source files.
+Running DRCs.
+#--------------------------------------
+# device-tree BSP DRC...
+#--------------------------------------
+Running generate.
+#--------------------------------------
+# device-tree BSP generate...
+#--------------------------------------
+--- device tree generator version: v1.1 ---
+generating xilinx.dts
+Clock Port Summary:
+v_vid_in_axi4s_0.vid_in_clk connected to vid_out_clk:
+    CLK_FREQ_HZ = 148500000
+v_vid_in_axi4s_0.aclk connected to vid_out_clk:
+    CLK_FREQ_HZ = 148500000
+v_tc_1.S_AXI_ACLK connected to axi4lite_0_clk:
+    CLK_FREQ_HZ = 50000000
+v_tc_1.clk connected to vid_out_clk:
+    CLK_FREQ_HZ = 148500000
+v_tc_1.S_AXI_ACLKEN connected to net_vcc:
+    CLK_FREQ_HZ = WARNING: no frequency found!
+v_tc_0.S_AXI_ACLK connected to axi4lite_0_clk:
+    CLK_FREQ_HZ = 50000000
+v_tc_0.clk connected to vid_out_clk:
+    CLK_FREQ_HZ = 148500000
+v_tc_0.S_AXI_ACLKEN connected to net_vcc:
+    CLK_FREQ_HZ = WARNING: no frequency found!
+v_rgb2ycrcb_0.s_axi_aclk connected to axi4lite_0_clk:
+    CLK_FREQ_HZ = 50000000
+v_rgb2ycrcb_0.aclk connected to vid_out_clk:
+    CLK_FREQ_HZ = 148500000
+v_cresample_0.s_axi_aclk connected to axi4lite_0_clk:
+    CLK_FREQ_HZ = 50000000
+v_cresample_0.aclk connected to vid_out_clk:
+    CLK_FREQ_HZ = 148500000
+v_cfa_0.s_axi_aclk connected to axi4lite_0_clk:
+    CLK_FREQ_HZ = 50000000
+v_cfa_0.aclk connected to vid_out_clk:
+    CLK_FREQ_HZ = 148500000
+v_axi4s_vid_out_0.video_out_clk connected to vid_out_clk:
+    CLK_FREQ_HZ = 148500000
+v_axi4s_vid_out_0.aclk connected to vid_out_clk:
+    CLK_FREQ_HZ = 148500000
+fmc_imageon_vita_receiver_0.S_AXI_ACLK connected to axi4lite_0_clk:
+    CLK_FREQ_HZ = 50000000
+fmc_imageon_vita_receiver_0.clk200 connected to clk_200mhz:
+    CLK_FREQ_HZ = 200000000
+fmc_imageon_vita_receiver_0.clk connected to vita_clk_ref:
+    CLK_FREQ_HZ = 37125000
+fmc_imageon_vita_receiver_0.clk4x connected to vid_out_clk:
+    CLK_FREQ_HZ = 148500000
+fmc_imageon_iic_0.S_AXI_ACLK connected to axi4lite_0_clk:
+    CLK_FREQ_HZ = 50000000
+clock_generator_1.CLKIN connected to fmc_imageon_video_clk1:
+    CLK_FREQ_HZ = 148500000
+clock_generator_1.CLKOUT0 connected to vid_out_clk:
+    CLK_FREQ_HZ = 148500000
+    CLK_INPORT = 
+    CLK_FACTOR = 
+clock_generator_1.CLKOUT1 connected to vita_clk_ref:
+    CLK_FREQ_HZ = 37125000
+    CLK_INPORT = 
+    CLK_FACTOR = 
+axi_vdma_0.s_axi_lite_aclk connected to axi4lite_0_clk:
+    CLK_FREQ_HZ = 50000000
+axi_vdma_0.m_axi_mm2s_aclk connected to vid_out_clk:
+    CLK_FREQ_HZ = 148500000
+axi_vdma_0.m_axi_s2mm_aclk connected to vid_out_clk:
+    CLK_FREQ_HZ = 148500000
+axi_vdma_0.m_axis_mm2s_aclk connected to vid_out_clk:
+    CLK_FREQ_HZ = 148500000
+axi_vdma_0.s_axis_s2mm_aclk connected to vid_out_clk:
+    CLK_FREQ_HZ = 148500000
+axi_tpg_0.S_AXI_ACLK connected to axi4lite_0_clk:
+    CLK_FREQ_HZ = 50000000
+axi_tpg_0.clk connected to vid_out_clk:
+    CLK_FREQ_HZ = 148500000
+axi_interconnect_1.INTERCONNECT_ACLK connected to
+processing_system7_0_FCLK_CLK3:
+    CLK_FREQ_HZ = 142857132
+axi_interconnect_1.S_AXI_ACLK connected to axi_interconnect_1_S_ACLK:
+    CLK_FREQ_HZ = WARNING: no frequency found!
+axi_interconnect_1.M_AXI_ACLK connected to axi_interconnect_1_M_ACLK:
+    CLK_FREQ_HZ = WARNING: no frequency found!
+axi4lite_0.INTERCONNECT_ACLK connected to axi4lite_0_clk:
+    CLK_FREQ_HZ = 50000000
+axi4lite_0.S_AXI_ACLK connected to axi4lite_0_S_ACLK:
+    CLK_FREQ_HZ = WARNING: no frequency found!
+axi4lite_0.M_AXI_ACLK connected to axi4lite_0_M_ACLK:
+    CLK_FREQ_HZ = WARNING: no frequency found!
+sws_8bits.S_AXI_ACLK connected to axi4lite_0_clk:
+    CLK_FREQ_HZ = 50000000
+iic_fmc.S_AXI_ACLK connected to axi4lite_0_clk:
+    CLK_FREQ_HZ = 50000000
+btns_5bits.S_AXI_ACLK connected to axi4lite_0_clk:
+    CLK_FREQ_HZ = 50000000
+ps7_axi_interconnect_0.M_AXI_GP0_ACLK connected to axi4lite_0_clk:
+    CLK_FREQ_HZ = WARNING: no frequency found!
+ps7_axi_interconnect_0.M_AXI_GP1_ACLK connected to
+ps7_axi_interconnect_0_M_AXI_GP1_ACLK:
+    CLK_FREQ_HZ = WARNING: no frequency found!
+ps7_axi_interconnect_0.S_AXI_HP1_ACLK connected to
+ps7_axi_interconnect_0_S_AXI_HP1_ACLK:
+    CLK_FREQ_HZ = WARNING: no frequency found!
+ps7_axi_interconnect_0.S_AXI_ACP_ACLK connected to
+ps7_axi_interconnect_0_S_AXI_ACP_ACLK:
+    CLK_FREQ_HZ = WARNING: no frequency found!
+ps7_axi_interconnect_0.S_AXI_GP1_ACLK connected to
+ps7_axi_interconnect_0_S_AXI_GP1_ACLK:
+    CLK_FREQ_HZ = WARNING: no frequency found!
+ps7_axi_interconnect_0.S_AXI_GP0_ACLK connected to
+ps7_axi_interconnect_0_S_AXI_GP0_ACLK:
+    CLK_FREQ_HZ = WARNING: no frequency found!
+ps7_axi_interconnect_0.S_AXI_HP3_ACLK connected to
+ps7_axi_interconnect_0_S_AXI_HP3_ACLK:
+    CLK_FREQ_HZ = WARNING: no frequency found!
+ps7_axi_interconnect_0.S_AXI_HP2_ACLK connected to
+ps7_axi_interconnect_0_S_AXI_HP2_ACLK:
+    CLK_FREQ_HZ = WARNING: no frequency found!
+ps7_axi_interconnect_0.S_AXI_HP0_ACLK connected to
+processing_system7_0_FCLK_CLK3:
+    CLK_FREQ_HZ = WARNING: no frequency found!
+ps7_axi_interconnect_0.S_AXI_ACLK connected to ps7_axi_interconnect_0_S_ACLK:
+    CLK_FREQ_HZ = WARNING: no frequency found!
+ps7_axi_interconnect_0.M_AXI_ACLK connected to ps7_axi_interconnect_0_M_ACLK:
+    CLK_FREQ_HZ = WARNING: no frequency found!
+IP connected to bus: ps7_axi_interconnect_0
+-master M_AXI_DP ps7_axi_interconnect_0 ps7_cortexa9_0
+-master M_AXI_DP ps7_axi_interconnect_0 ps7_cortexa9_1
+-slave S_AXI ps7_axi_interconnect_0 ps7_uart_1
+-slave S_AXI ps7_axi_interconnect_0 ps7_afi_0
+-slave S_AXI ps7_axi_interconnect_0 ps7_afi_1
+-slave S_AXI ps7_axi_interconnect_0 ps7_afi_2
+-slave S_AXI ps7_axi_interconnect_0 ps7_afi_3
+-slave S_AXI ps7_axi_interconnect_0 ps7_sd_0
+-slave S_AXI ps7_axi_interconnect_0 ps7_ttc_0
+-slave S_AXI ps7_axi_interconnect_0 ps7_ethernet_0
+-slave S_AXI ps7_axi_interconnect_0 ps7_usb_0
+-slave S_AXI ps7_axi_interconnect_0 ps7_qspi_0
+-slave S_AXI ps7_axi_interconnect_0 ps7_qspi_linear_0
+-slave S_AXI ps7_axi_interconnect_0 ps7_ddr_0
+-slave S_AXI ps7_axi_interconnect_0 ps7_gpio_0
+-slave S_AXI ps7_axi_interconnect_0 ps7_ddrc_0
+-slave S_AXI ps7_axi_interconnect_0 ps7_dev_cfg_0
+-slave S_AXI_LITE ps7_axi_interconnect_0 ps7_dma_s
+-slave S_AXI ps7_axi_interconnect_0 ps7_iop_bus_config_0
+-slave S_AXI ps7_axi_interconnect_0 ps7_ram_0
+-slave S_AXI ps7_axi_interconnect_0 ps7_ram_1
+-slave S_AXI ps7_axi_interconnect_0 ps7_scugic_0
+-slave S_AXI ps7_axi_interconnect_0 ps7_scutimer_0
+-slave S_AXI ps7_axi_interconnect_0 ps7_scuwdt_0
+-slave S_AXI ps7_axi_interconnect_0 ps7_slcr_0
+-slave S_AXI_LITE ps7_axi_interconnect_0 ps7_dma_ns
+-slave axi_tpg_0
+-slave axi_vdma_0
+-slave btns_5bits
+-slave fmc_imageon_iic_0
+-slave fmc_imageon_vita_receiver_0
+-slave iic_fmc
+-slave ps7_afi_0
+IP 69822800 ps7_afi_0 is already appended - skip it
+-slave ps7_afi_1
+IP 69823200 ps7_afi_1 is already appended - skip it
+-slave ps7_afi_2
+IP 69823600 ps7_afi_2 is already appended - skip it
+-slave ps7_afi_3
+IP 69824000 ps7_afi_3 is already appended - skip it
+-slave ps7_ddr_0
+IP 69826800 ps7_ddr_0 is already appended - skip it
+-slave ps7_ddrc_0
+IP 69828000 ps7_ddrc_0 is already appended - skip it
+-slave ps7_dev_cfg_0
+IP 69828400 ps7_dev_cfg_0 is already appended - skip it
+-slave ps7_dma_ns
+-slave ps7_dma_s
+IP 69828800 ps7_dma_s is already appended - skip it
+-slave ps7_ethernet_0
+IP 69825200 ps7_ethernet_0 is already appended - skip it
+-slave ps7_gpio_0
+IP 69827200 ps7_gpio_0 is already appended - skip it
+-slave ps7_iop_bus_config_0
+IP 69829200 ps7_iop_bus_config_0 is already appended - skip it
+-slave ps7_qspi_0
+IP 69826000 ps7_qspi_0 is already appended - skip it
+-slave ps7_qspi_linear_0
+IP 69826400 ps7_qspi_linear_0 is already appended - skip it
+-slave ps7_ram_0
+IP 69829600 ps7_ram_0 is already appended - skip it
+-slave ps7_ram_1
+IP 70134896 ps7_ram_1 is already appended - skip it
+-slave ps7_scugic_0
+IP 70135296 ps7_scugic_0 is already appended - skip it
+-slave ps7_scutimer_0
+IP 70135696 ps7_scutimer_0 is already appended - skip it
+-slave ps7_scuwdt_0
+IP 70136096 ps7_scuwdt_0 is already appended - skip it
+-slave ps7_sd_0
+IP 69824400 ps7_sd_0 is already appended - skip it
+-slave ps7_slcr_0
+IP 70136496 ps7_slcr_0 is already appended - skip it
+-slave ps7_ttc_0
+IP 69824800 ps7_ttc_0 is already appended - skip it
+-slave ps7_uart_1
+IP 69822400 ps7_uart_1 is already appended - skip it
+-slave ps7_usb_0
+IP 69825600 ps7_usb_0 is already appended - skip it
+-slave sws_8bits
+-slave v_cfa_0
+-slave v_cresample_0
+-slave v_rgb2ycrcb_0
+-slave v_tc_0
+-slave v_tc_1
+ps7_afi_0
+ps7_afi_1
+ps7_afi_2
+ps7_afi_3
+axi_tpg_0
+fmc_imageon_vita_receiver_0
+v_cfa_0
+v_cresample_0
+v_rgb2ycrcb_0
+v_tc_0
+v_tc_1
+{serial0 aliasref ps7_uart_1 0} {ethernet0 aliasref ps7_ethernet_0 0}
+Running post_generate.
+Running execs_generate.

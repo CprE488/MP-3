@@ -5,7 +5,7 @@
     The structure and the elements are likely to change over the next few releases.
     This means code written to parse this file will need to be revisited each subsequent release.-->
 
-  <application stringID="NgdBuild" timeStamp="Wed Oct 22 19:49:04 2014">
+  <application stringID="NgdBuild" timeStamp="Mon Oct 27 19:12:07 2014">
     <section stringID="User_Env">
       <table stringID="User_EnvVar">
         <column stringID="variable"/>
@@ -47,7 +47,7 @@
         <item stringID="User_EnvOsname" value="RedHatEnterpriseWorkstation"/>
         <item stringID="User_EnvOsrelease" value="Red Hat Enterprise Linux Workstation release 6.6 (Santiago)"/>
       </item>
-      <item stringID="User_EnvHost" value="research-5.ece.iastate.edu"/>
+      <item stringID="User_EnvHost" value="research-3.ece.iastate.edu"/>
       <table stringID="User_EnvCpu">
         <column stringID="arch"/>
         <column stringID="speed"/>
@@ -57,7 +57,7 @@
         </row>
         <row stringID="row" value="1">
           <item stringID="arch" value="Intel(R) Xeon(R) CPU           X5650  @ 2.67GHz"/>
-          <item stringID="speed" value="2661.000 MHz"/>
+          <item stringID="speed" value="1596.000 MHz"/>
         </row>
       </table>
     </section>

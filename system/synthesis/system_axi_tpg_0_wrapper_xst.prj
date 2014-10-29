@@ -179,9 +179,9 @@ vhdl proc_common_v3_00_a /remote/Xilinx/14.6/EDK/hw/XilinxProcessorIPLib/pcores/
 vhdl axi_lite_ipif_v1_00_a /remote/Xilinx/14.6/EDK/hw/XilinxProcessorIPLib/pcores/axi_lite_ipif_v1_00_a/hdl/vhdl/address_decoder.vhd
 vhdl axi_lite_ipif_v1_00_a /remote/Xilinx/14.6/EDK/hw/XilinxProcessorIPLib/pcores/axi_lite_ipif_v1_00_a/hdl/vhdl/slave_attachment.vhd
 vhdl axi_lite_ipif_v1_00_a /remote/Xilinx/14.6/EDK/hw/XilinxProcessorIPLib/pcores/axi_lite_ipif_v1_00_a/hdl/vhdl/axi_lite_ipif.vhd
-vhdl axi_tpg_v2_00_a /tmp/488/MP-3/repository/ProcessorIPLib/pcores/axi_tpg_v2_00_a/hdl/vhdl/tpg_core.vhd
-vhdl axi_tpg_v2_00_a /tmp/488/MP-3/repository/ProcessorIPLib/pcores/axi_tpg_v2_00_a/hdl/vhdl/zplate_pkg.vhd
-vhdl axi_tpg_v2_00_a /tmp/488/MP-3/repository/ProcessorIPLib/pcores/axi_tpg_v2_00_a/hdl/vhdl/zplate_top.vhd
-vhdl axi_tpg_v2_00_a /tmp/488/MP-3/repository/ProcessorIPLib/pcores/axi_tpg_v2_00_a/hdl/vhdl/user_logic.vhd
-vhdl axi_tpg_v2_00_a /tmp/488/MP-3/repository/ProcessorIPLib/pcores/axi_tpg_v2_00_a/hdl/vhdl/axi_tpg.vhd
+vhdl axi_tpg_v2_00_a /tmp/cpre488_vens/MP-3/repository/ProcessorIPLib/pcores/axi_tpg_v2_00_a/hdl/vhdl/tpg_core.vhd
+vhdl axi_tpg_v2_00_a /tmp/cpre488_vens/MP-3/repository/ProcessorIPLib/pcores/axi_tpg_v2_00_a/hdl/vhdl/zplate_pkg.vhd
+vhdl axi_tpg_v2_00_a /tmp/cpre488_vens/MP-3/repository/ProcessorIPLib/pcores/axi_tpg_v2_00_a/hdl/vhdl/zplate_top.vhd
+vhdl axi_tpg_v2_00_a /tmp/cpre488_vens/MP-3/repository/ProcessorIPLib/pcores/axi_tpg_v2_00_a/hdl/vhdl/user_logic.vhd
+vhdl axi_tpg_v2_00_a /tmp/cpre488_vens/MP-3/repository/ProcessorIPLib/pcores/axi_tpg_v2_00_a/hdl/vhdl/axi_tpg.vhd
 vhdl work ../hdl/system_axi_tpg_0_wrapper.vhd

@@ -1,0 +1,12 @@
+21:16:35 **** Incremental Build of configuration Debug for project camera_app ****
+make all 
+Building target: camera_app.elf
+Invoking: ARM gcc linker
+arm-xilinx-eabi-gcc -Wl,-T -Wl,../src/lscript.ld -L../../system_bsp/ps7_cortexa9_0/lib -o "camera_app.elf"  ./src/camera_app.o ./src/fmc_imageon_utils.o ./src/gs_to_color.o ./src/video_detector.o ./src/video_frame_buffer.o ./src/video_generator.o ./src/video_resolution.o ./src/xtpg_app.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+../../system_bsp/ps7_cortexa9_0/lib/libxil.a(xil-crt0.o): In function `_start':
+/home/vens/classes/Fall2014/cpre488/labs/mp2/MP-2/sw/system_bsp/ps7_cortexa9_0/libsrc/standalone_v3_06_a/src/xil-crt0.S:145: undefined reference to `main'
+collect2: error: ld returned 1 exit status
+make: *** [camera_app.elf] Error 1
+
+21:16:35 Build Finished (took 164ms)
+

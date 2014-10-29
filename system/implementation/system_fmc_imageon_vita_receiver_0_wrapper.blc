@@ -7,17 +7,17 @@ system_fmc_imageon_vita_receiver_0_wrapper.ngc
 ../system_fmc_imageon_vita_receiver_0_wrapper
 
 Reading NGO file
-"/tmp/488/MP-3/system/implementation/fmc_imageon_vita_receiver_0_wrapper/system_
-fmc_imageon_vita_receiver_0_wrapper.ngc" ...
+"/tmp/cpre488_vens/MP-3/system/implementation/fmc_imageon_vita_receiver_0_wrappe
+r/system_fmc_imageon_vita_receiver_0_wrapper.ngc" ...
 Loading design module
-"/tmp/488/MP-3/system/implementation/fmc_imageon_vita_receiver_0_wrapper/afifo_6
-4i_16o_k7.ngc"...
+"/tmp/cpre488_vens/MP-3/system/implementation/fmc_imageon_vita_receiver_0_wrappe
+r/afifo_64i_16o_k7.ngc"...
 Loading design module
-"/tmp/488/MP-3/system/implementation/fmc_imageon_vita_receiver_0_wrapper/pulse_r
-egen_k7.ngc"...
+"/tmp/cpre488_vens/MP-3/system/implementation/fmc_imageon_vita_receiver_0_wrappe
+r/pulse_regen_k7.ngc"...
 Loading design module
-"/tmp/488/MP-3/system/implementation/fmc_imageon_vita_receiver_0_wrapper/afifo_3
-2_k7.ngc"...
+"/tmp/cpre488_vens/MP-3/system/implementation/fmc_imageon_vita_receiver_0_wrappe
+r/afifo_32_k7.ngc"...
 
 Partition Implementation Status
 -------------------------------
@@ -30,7 +30,7 @@ NGCBUILD Design Results Summary:
   Number of errors:     0
   Number of warnings:   0
 
-Total memory usage is 556700 kilobytes
+Total memory usage is 556744 kilobytes
 
 Writing NGC file "../system_fmc_imageon_vita_receiver_0_wrapper.ngc" ...
 Total REAL time to NGCBUILD completion:  6 sec

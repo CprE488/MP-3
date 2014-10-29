@@ -1,7 +1,7 @@
-INFILE=/tmp/488/MP-3/system/implementation/system.ncd
-OUTFILE=/tmp/488/MP-3/system/implementation/system.bit
+INFILE=/tmp/cpre488_vens/MP-3/system/implementation/system.ncd
+OUTFILE=/tmp/cpre488_vens/MP-3/system/implementation/system.bit
 FAMILY=Zynq
 PART=xc7z020-1clg484
-WORKINGDIR=/tmp/488/MP-3/system/implementation
+WORKINGDIR=/tmp/cpre488_vens/MP-3/system/implementation
 LICENSE=ISE
 USER_INFO=174157297_174157298_210562663_503

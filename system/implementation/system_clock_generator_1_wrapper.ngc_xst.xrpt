@@ -5,7 +5,7 @@
     The structure and the elements are likely to change over the next few releases.
     This means code written to parse this file will need to be revisited each subsequent release.-->
 
-  <application stringID="Xst" timeStamp="Wed Oct 22 19:15:36 2014">
+  <application stringID="Xst" timeStamp="Mon Oct 27 19:07:53 2014">
     <section stringID="User_Env">
       <table stringID="User_EnvVar">
         <column stringID="variable"/>
@@ -47,7 +47,7 @@
         <item stringID="User_EnvOsname" value="RedHatEnterpriseWorkstation"/>
         <item stringID="User_EnvOsrelease" value="Red Hat Enterprise Linux Workstation release 6.6 (Santiago)"/>
       </item>
-      <item stringID="User_EnvHost" value="research-5.ece.iastate.edu"/>
+      <item stringID="User_EnvHost" value="research-3.ece.iastate.edu"/>
       <table stringID="User_EnvCpu">
         <column stringID="arch"/>
         <column stringID="speed"/>
@@ -57,7 +57,7 @@
         </row>
         <row stringID="row" value="1">
           <item stringID="arch" value="Intel(R) Xeon(R) CPU           X5650  @ 2.67GHz"/>
-          <item stringID="speed" value="1729.000 MHz"/>
+          <item stringID="speed" value="1596.000 MHz"/>
         </row>
       </table>
     </section>
@@ -73,7 +73,7 @@
       <item DEFAULT="/" stringID="XST_HIERARCHYSEPARATOR" value="/"/>
       <item DEFAULT="Yes" label="-iobuf" stringID="XST_IOBUF" value="NO"/>
       <item DEFAULT="" label="-sd" stringID="XST_SD" value="{../implementation}"/>
-      <item DEFAULT="" label="-vlgincdir" stringID="XST_VLGINCDIR" value="{&quot;/tmp/488/MP-3/system/pcores/&quot; &quot;/tmp/488/MP-3/repository/ProcessorIPLib/pcores/&quot; &quot;/remote/Xilinx/14.6/EDK/hw/XilinxBFMinterface/pcores/&quot; &quot;/remote/Xilinx/14.6/EDK/hw/XilinxProcessorIPLib/pcores/&quot; }"/>
+      <item DEFAULT="" label="-vlgincdir" stringID="XST_VLGINCDIR" value="{&quot;/tmp/cpre488_vens/MP-3/system/pcores/&quot; &quot;/tmp/cpre488_vens/MP-3/repository/ProcessorIPLib/pcores/&quot; &quot;/remote/Xilinx/14.6/EDK/hw/XilinxBFMinterface/pcores/&quot; &quot;/remote/Xilinx/14.6/EDK/hw/XilinxProcessorIPLib/pcores/&quot; }"/>
     </section>
     <section stringID="XST_UNISIM_SUMMARY">
       <item dataType="int" stringID="XST_NUM_BUFG" value="1"/>

@@ -1,6 +1,6 @@
 the_ROM_image:
 {
-	[bootloader]/tmp/cpre488-vens/MP-3/sw/zynq_fsbl/Debug/zynq_fsbl.elf
-	/tmp/cpre488-vens/MP-3/sw/system_hw_platform/system.bit
-	/tmp/cpre488-vens/MP-3/bootimage/u-boot.elf
+	[bootloader]/tmp/cpre488_vens/MP-3/sw/zynq_fsbl/Debug/zynq_fsbl.elf
+	/tmp/cpre488_vens/MP-3/sw/system_hw_platform/system.bit
+	/tmp/cpre488_vens/MP-3/bootimage/u-boot.elf
 }

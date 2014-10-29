@@ -3,9 +3,9 @@ Release 14.6 - libgen Xilinx EDK 14.6 Build EDK_P.68d
 Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
 
 Command Line: libgen -hw ../system_hw_platform/system.xml -lp
-/tmp/cpre488-vens/MP-3/repository/ProcessorIPLib -lp ../../repository -pe
+/tmp/cpre488_vens/MP-3/repository/ProcessorIPLib -lp ../../repository -pe
 ps7_cortexa9_0 -log libgen.log system.mss 
 
-ERROR:EDK:410 - gpio - /tmp/488/MP-3/sw/device-tree_bsp_0/system.mss line 27 -
-   No IP instance named leds_8bits is present in the hardware!
+ERROR:EDK:410 - gpio - /tmp/cpre488_vens/MP-3/sw/device-tree_bsp_0/system.mss
+   line 27 - No IP instance named leds_8bits is present in the hardware!
 ERROR:EDK:1206 - Errors occured while parsing MSS file.

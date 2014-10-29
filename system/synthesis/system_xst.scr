@@ -1,4 +1,4 @@
-set -tmpdir /tmp/488/MP-3/system/synthesis/xst_temp_dir/
+set -tmpdir /tmp/cpre488_vens/MP-3/system/synthesis/xst_temp_dir/
 run
 -opt_mode speed
 -netlist_hierarchy as_optimized
@@ -12,4 +12,4 @@ run
 -iobuf YES
 -max_fanout 10000
 -sd {../implementation}
--vlgincdir {"/tmp/488/MP-3/system/pcores/" "/tmp/488/MP-3/repository/ProcessorIPLib/pcores/" "/remote/Xilinx/14.6/EDK/hw/XilinxBFMinterface/pcores/" "/remote/Xilinx/14.6/EDK/hw/XilinxProcessorIPLib/pcores/" "/remote/Xilinx/14.6/EDK/hw/XilinxProcessorIPLib/pcores/axi_vdma_v5_04_a/hdl/verilog/" }
+-vlgincdir {"/tmp/cpre488_vens/MP-3/system/pcores/" "/tmp/cpre488_vens/MP-3/repository/ProcessorIPLib/pcores/" "/remote/Xilinx/14.6/EDK/hw/XilinxBFMinterface/pcores/" "/remote/Xilinx/14.6/EDK/hw/XilinxProcessorIPLib/pcores/" "/remote/Xilinx/14.6/EDK/hw/XilinxProcessorIPLib/pcores/axi_vdma_v5_04_a/hdl/verilog/" }

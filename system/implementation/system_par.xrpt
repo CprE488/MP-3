@@ -5,7 +5,7 @@
     The structure and the elements are likely to change over the next few releases.
     This means code written to parse this file will need to be revisited each subsequent release.-->
 
-  <application stringID="par" timeStamp="Wed Oct 22 19:59:23 2014">
+  <application stringID="par" timeStamp="Mon Oct 27 19:22:01 2014">
     <section stringID="User_Env">
       <table stringID="User_EnvVar">
         <column stringID="variable"/>
@@ -47,13 +47,13 @@
         <item stringID="User_EnvOsname" value="RedHatEnterpriseWorkstation"/>
         <item stringID="User_EnvOsrelease" value="Red Hat Enterprise Linux Workstation release 6.6 (Santiago)"/>
       </item>
-      <item stringID="User_EnvHost" value="research-5.ece.iastate.edu"/>
+      <item stringID="User_EnvHost" value="research-3.ece.iastate.edu"/>
       <table stringID="User_EnvCpu">
         <column stringID="arch"/>
         <column stringID="speed"/>
         <row stringID="row" value="0">
           <item stringID="arch" value="Intel(R) Xeon(R) CPU           X5650  @ 2.67GHz"/>
-          <item stringID="speed" value="2661.000 MHz"/>
+          <item stringID="speed" value="1596.000 MHz"/>
         </row>
         <row stringID="row" value="1">
           <item stringID="arch" value="Intel(R) Xeon(R) CPU           X5650  @ 2.67GHz"/>
@@ -82,12 +82,12 @@
     </task>
     <task stringID="PAR_PAR">
       <section stringID="PAR_DESIGN_SUMMARY">
-        <item stringID="PAR_REAL_TIME_COMPLETION_ROUTER" value="3 mins 23 secs "/>
-        <item stringID="PAR_CPU_TIME_COMPLETION_ROUTER" value="3 mins 37 secs "/>
+        <item stringID="PAR_REAL_TIME_COMPLETION_ROUTER" value="3 mins 17 secs "/>
+        <item stringID="PAR_CPU_TIME_COMPLETION_ROUTER" value="3 mins 33 secs "/>
         <item dataType="int" stringID="PAR_UNROUTES" value="0"/>
         <item dataType="float" stringID="PAR_TIMING_SCORE" value="0.000000"/>
-        <item stringID="PAR_REAL_TIME_COMPLETION_PAR" value="3 mins 31 secs "/>
-        <item stringID="PAR_CPU_TIME_COMPLETION_PAR" value="3 mins 45 secs "/>
+        <item stringID="PAR_REAL_TIME_COMPLETION_PAR" value="3 mins 25 secs "/>
+        <item stringID="PAR_CPU_TIME_COMPLETION_PAR" value="3 mins 41 secs "/>
       </section>
     </task>
     <task stringID="PAR_par">

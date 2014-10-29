@@ -2,5 +2,5 @@ vhdl clock_generator_v4_03_a /remote/Xilinx/14.6/EDK/hw/XilinxProcessorIPLib/pco
 vhdl clock_generator_v4_03_a /remote/Xilinx/14.6/EDK/hw/XilinxProcessorIPLib/pcores/clock_generator_v4_03_a/hdl/vhdl/pll_module.vhd
 vhdl clock_generator_v4_03_a /remote/Xilinx/14.6/EDK/hw/XilinxProcessorIPLib/pcores/clock_generator_v4_03_a/hdl/vhdl/mmcm_module.vhd
 vhdl clock_generator_v4_03_a /remote/Xilinx/14.6/EDK/hw/XilinxProcessorIPLib/pcores/clock_generator_v4_03_a/hdl/vhdl/plle2_module.vhd
-VHDL clock_generator_1_v4_03_a /tmp/488/MP-3/system/hdl/elaborate/clock_generator_1_v4_03_a/hdl/vhdl/clock_generator.vhd
+VHDL clock_generator_1_v4_03_a /tmp/cpre488_vens/MP-3/system/hdl/elaborate/clock_generator_1_v4_03_a/hdl/vhdl/clock_generator.vhd
 vhdl work ../hdl/system_clock_generator_1_wrapper.vhd

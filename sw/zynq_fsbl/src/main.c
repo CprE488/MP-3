@@ -180,7 +180,7 @@ u8 SystemInitFlag;
 extern ImageMoverType MoveImage;
 extern XDcfg *DcfgInstPtr;
 extern u8 BitstreamFlag;
-#ifdef XPAR_PS7_QSPI_LINEAR_0_S_AXI_BASEADDR
+#ifdef XPAR_PS7_QSPI_LINEAR_0_S_AXI_BASEADDR_WTF
 extern u32 QspiFlashSize;
 #endif
 /*****************************************************************************/
@@ -340,7 +340,7 @@ int main(void)
 	/*
 	 * QSPI BOOT MODE
 	 */
-#ifdef XPAR_PS7_QSPI_LINEAR_0_S_AXI_BASEADDR
+#ifdef XPAR_PS7_QSPI_LINEAR_0_S_AXI_BASEADDR_WTF
 
 #ifdef MMC_SUPPORT
 	/*
@@ -1244,7 +1244,7 @@ void GetSiliconVersion(void)
 	/*
 	 * Get the silicon version
 	 */
-	Silicon_Version = XDcfg_GetPsVersion(DcfgInstPtr);
+	Silicon_Version = SILICON_VERSION_3_1;
 	if(Silicon_Version == SILICON_VERSION_3_1) {
 		fsbl_printf(DEBUG_GENERAL,"Silicon Version 3.1\r\n");
 	} else {
@@ -1359,7 +1359,7 @@ u32 NextValidImageCheck(void)
 	/*
 	 * Setting variable with maximum flash size based on boot mode
 	 */
-#ifdef XPAR_PS7_QSPI_LINEAR_0_S_AXI_BASEADDR
+#ifdef XPAR_PS7_QSPI_LINEAR_0_S_AXI_BASEADDR_WTF
 	if (FlashReadBaseAddress == XPS_QSPI_LINEAR_BASEADDR) {
 		BootDevMaxSize = QspiFlashSize;
 	}

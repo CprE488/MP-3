@@ -2,7 +2,7 @@
 ##
 ##  Xilinx, Inc. 2006            www.xilinx.com
 ############################################################################
-##  File name :       /tmp/488/MP-3/system/implementation/processing_system7_0_wrapper/processing_system7_0.xdc
+##  File name :       /tmp/cpre488_vens/MP-3/system/implementation/processing_system7_0_wrapper/processing_system7_0.xdc
 ##
 ##  Details :     Constraints file
 ##                    FPGA family:       zynq
@@ -18,12 +18,12 @@
 ############################################################################
 # Clock constraints                                                        #
 ############################################################################
+create_clock -name clk_fpga_1 -period "5" [get_nets "FCLK_CLK1"]
+set_input_jitter clk_fpga_1 0.15
 create_clock -name clk_fpga_3 -period "7" [get_nets "FCLK_CLK3"]
 set_input_jitter clk_fpga_3 0.21
 create_clock -name clk_fpga_0 -period "20" [get_nets "FCLK_CLK0"]
 set_input_jitter clk_fpga_0 0.6
-create_clock -name clk_fpga_1 -period "5" [get_nets "FCLK_CLK1"]
-set_input_jitter clk_fpga_1 0.15
 
 
 ############################################################################

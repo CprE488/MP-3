@@ -1,7 +1,7 @@
 Release 14.6 par P.68d (lin64)
 Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
 
-research-5.ece.iastate.edu::  Wed Oct 22 19:58:57 2014
+research-3.ece.iastate.edu::  Mon Oct 27 19:21:36 2014
 
 par -w -ol high system_map.ncd system.ncd system.pcf 
 
@@ -70,8 +70,8 @@ Router effort level (-rl):    High
 
 INFO:Timing:3386 - Intersecting Constraints found and resolved.  For more information, see the TSI report.  Please consult the Xilinx
    Command Line Tools User Guide for information on generating a TSI report.
-Starting initial Timing Analysis.  REAL time: 57 secs 
-Finished initial Timing Analysis.  REAL time: 58 secs 
+Starting initial Timing Analysis.  REAL time: 54 secs 
+Finished initial Timing Analysis.  REAL time: 56 secs 
 
 WARNING:Par:288 - The signal
    fmc_imageon_vita_receiver_0/fmc_imageon_vita_receiver_0/USER_LOGIC_I/VITA_CORE_I/vita_iserdes_v5.vita_iserdes/generate_datagen.datagen[3]
@@ -330,27 +330,27 @@ WARNING:Par:288 - The signal
 Starting Router
 
 
-Phase  1  : 139735 unrouted;      REAL time: 1 mins 3 secs 
+Phase  1  : 139735 unrouted;      REAL time: 59 secs 
 
-Phase  2  : 115314 unrouted;      REAL time: 1 mins 10 secs 
+Phase  2  : 115314 unrouted;      REAL time: 1 mins 7 secs 
 
-Phase  3  : 41556 unrouted;      REAL time: 1 mins 46 secs 
+Phase  3  : 41556 unrouted;      REAL time: 1 mins 42 secs 
 
-Phase  4  : 41529 unrouted; (Setup:0, Hold:230866, Component Switching Limit:0)     REAL time: 1 mins 58 secs 
+Phase  4  : 41529 unrouted; (Setup:0, Hold:230866, Component Switching Limit:0)     REAL time: 1 mins 55 secs 
 
 Updating file: system.ncd with current fully routed design.
 
-Phase  5  : 0 unrouted; (Setup:126, Hold:196832, Component Switching Limit:0)     REAL time: 2 mins 53 secs 
+Phase  5  : 0 unrouted; (Setup:126, Hold:196832, Component Switching Limit:0)     REAL time: 2 mins 48 secs 
 
-Phase  6  : 0 unrouted; (Setup:0, Hold:196813, Component Switching Limit:0)     REAL time: 3 mins 6 secs 
+Phase  6  : 0 unrouted; (Setup:0, Hold:196813, Component Switching Limit:0)     REAL time: 3 mins 1 secs 
 
-Phase  7  : 0 unrouted; (Setup:0, Hold:196813, Component Switching Limit:0)     REAL time: 3 mins 6 secs 
+Phase  7  : 0 unrouted; (Setup:0, Hold:196813, Component Switching Limit:0)     REAL time: 3 mins 1 secs 
 
-Phase  8  : 0 unrouted; (Setup:0, Hold:196813, Component Switching Limit:0)     REAL time: 3 mins 6 secs 
+Phase  8  : 0 unrouted; (Setup:0, Hold:196813, Component Switching Limit:0)     REAL time: 3 mins 1 secs 
 
-Phase  9  : 0 unrouted; (Setup:0, Hold:0, Component Switching Limit:0)     REAL time: 3 mins 22 secs 
-Total REAL time to Router completion: 3 mins 23 secs 
-Total CPU time to Router completion: 3 mins 37 secs 
+Phase  9  : 0 unrouted; (Setup:0, Hold:0, Component Switching Limit:0)     REAL time: 3 mins 17 secs 
+Total REAL time to Router completion: 3 mins 17 secs 
+Total CPU time to Router completion: 3 mins 33 secs 
 
 Partition Implementation Status
 -------------------------------
@@ -499,10 +499,10 @@ All signals are completely routed.
 
 WARNING:Par:283 - There are 69 loadless signals in this design. This design will cause Bitgen to issue DRC warnings.
 
-Total REAL time to PAR completion: 3 mins 31 secs 
-Total CPU time to PAR completion: 3 mins 45 secs 
+Total REAL time to PAR completion: 3 mins 25 secs 
+Total CPU time to PAR completion: 3 mins 41 secs 
 
-Peak Memory Usage:  1651 MB
+Peak Memory Usage:  1653 MB
 
 Placer: Placement generated during map.
 Routing: Completed - No errors found.

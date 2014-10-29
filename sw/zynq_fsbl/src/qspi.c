@@ -69,7 +69,7 @@
 #include "qspi.h"
 #include "image_mover.h"
 
-#ifdef XPAR_PS7_QSPI_LINEAR_0_S_AXI_BASEADDR
+#ifdef XPAR_PS7_QSPI_LINEAR_0_S_AXI_BASEADDR_WTF
 #include "xqspips_hw.h"
 #include "xqspips.h"
 

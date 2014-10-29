@@ -40,3 +40,51 @@
 		 /tmp/cpre488-vens/MP-3/repository/ProcessorIPLib
 		 /tmp/cpre488-vens/MP-3/repository 
 20:08:18.753 ERROR - Unable to read in MSS file /tmp/488/MP-3/sw/device-tree_bsp_0/system.mss. 
+20:01:54.894 INFO  - Processing command line option -hwspec /tmp/cpre488_vens/MP-3/system/SDK/SDK_Export/hw/system.xml. 
+20:01:57.213 INFO  - The hardware specification for project 'system_hw_platform' is different from /tmp/cpre488_vens/MP-3/system/SDK/SDK_Export/hw/system.xml. 
+20:01:57.703 INFO  - Copied contents of /tmp/cpre488_vens/MP-3/system/SDK/SDK_Export/hw/system.xml into /system_hw_platform/system.xml. 
+20:01:57.715 INFO  - Copied contents of /tmp/cpre488_vens/MP-3/system/SDK/SDK_Export/hw/system.bit into /system_hw_platform/system.bit. 
+20:01:59.127 INFO  - Copied contents of /tmp/cpre488_vens/MP-3/system/SDK/SDK_Export/hw/ps7_init.c into /system_hw_platform/ps7_init.c. 
+20:01:59.129 INFO  - Copied contents of /tmp/cpre488_vens/MP-3/system/SDK/SDK_Export/hw/ps7_init.h into /system_hw_platform/ps7_init.h. 
+20:01:59.132 INFO  - Copied contents of /tmp/cpre488_vens/MP-3/system/SDK/SDK_Export/hw/ps7_init.html into /system_hw_platform/ps7_init.html. 
+20:01:59.138 INFO  - Copied contents of /tmp/cpre488_vens/MP-3/system/SDK/SDK_Export/hw/ps7_init.tcl into /system_hw_platform/ps7_init.tcl. 
+20:02:00.173 INFO  - Synchronizing projects in the workspace with the hardware platform specification changes. 
+20:02:01.801 INFO  - Restoring local repository preferences: 
+		 /tmp/cpre488-vens/MP-3/repository/ProcessorIPLib
+		 /tmp/cpre488-vens/MP-3/repository 
+20:02:27.465 INFO  - Processing command line option -hwspec /tmp/cpre488_vens/MP-3/system/SDK/SDK_Export/hw/system.xml. 
+20:02:34.933 INFO  - Restoring local repository preferences: 
+		 /tmp/cpre488-vens/MP-3/repository/ProcessorIPLib
+		 /tmp/cpre488-vens/MP-3/repository 
+20:02:34.997 ERROR - Unable to read in MSS file /tmp/cpre488_vens/MP-3/sw/device-tree_bsp_0/system.mss. 
+20:03:21.804 INFO  - Saving repository preferences. 
+20:03:21.805 INFO  - Reading in cores from local repositories: 
+		 /tmp/cpre488_vens/MP-3/repository/ProcessorIPLib
+		 /tmp/cpre488_vens/MP-3/repository 
+20:03:21.806 INFO  - Updating libgen.options on all BSP projects. 
+20:03:21.808 INFO  - Cleaning BSP projects in the workspace. 
+20:05:03.637 INFO  - Project system_bsp was a BSP project. Please update references. 
+20:05:03.637 ERROR - SDK has detected that project system_bsp has been deleted (or renamed).
+If this project was a BSP referenced by other C/C++ applications, then those applications will fail to build now. Please right click on those applications and click 'Change Referenced BSP' to update those projects' BSP references. 
+20:08:12.752 INFO  - 'device-tree' is a board support package for an OS for which applications cannot be developed within SDK. 
+20:08:12.752 INFO  - You can configure and build project 'device-tree_42' within SDK at will, but have to export it into the appropriate third party environment to develop applications. 
+20:08:13.504 WARN  - Unable to determine location of documentation for OS device-tree. 
+20:16:33.132 INFO  - Processing command line option -hwspec /tmp/cpre488_vens/MP-3/system/SDK/SDK_Export/hw/system.xml. 
+20:20:47.937 INFO  - Restoring local repository preferences: 
+		 /tmp/cpre488_vens/MP-3/repository/ProcessorIPLib
+		 /tmp/cpre488_vens/MP-3/repository 
+20:21:55.640 INFO  - Processing command line option -hwspec /tmp/cpre488_vens/MP-3/system/SDK/SDK_Export/hw/system.xml. 
+20:22:01.810 INFO  - Restoring local repository preferences: 
+		 /tmp/cpre488_vens/MP-3/repository/ProcessorIPLib
+		 /tmp/cpre488_vens/MP-3/repository 
+20:22:01.860 ERROR - Unable to read in MSS file /tmp/cpre488_vens/MP-3/sw/device-tree_bsp_0/system.mss. 
+20:27:59.927 INFO  - Processing command line option -hwspec /tmp/cpre488_vens/MP-3/system/SDK/SDK_Export/hw/system.xml. 
+20:28:16.132 INFO  - Restoring local repository preferences: 
+		 /tmp/cpre488_vens/MP-3/repository/ProcessorIPLib
+		 /tmp/cpre488_vens/MP-3/repository 
+20:28:16.202 ERROR - Unable to read in MSS file /tmp/cpre488_vens/MP-3/sw/zynq_fsbl_bsp/system.mss. 
+20:28:19.441 ERROR - Unable to read in MSS file /tmp/cpre488_vens/MP-3/sw/device-tree_bsp_0/system.mss. 
+20:30:25.370 INFO  - Processing command line option -hwspec /tmp/cpre488_vens/MP-3/system/SDK/SDK_Export/hw/system.xml. 
+20:38:37.838 INFO  - Processing command line option -hwspec /tmp/cpre488_vens/MP-3/system/SDK/SDK_Export/hw/system.xml. 
+20:39:19.486 INFO  - Processing command line option -hwspec /tmp/cpre488_vens/MP-3/system/SDK/SDK_Export/hw/system.xml. 
+21:13:07.951 INFO  - Processing command line option -hwspec /tmp/cpre488_vens/MP-3/system/SDK/SDK_Export/hw/system.xml. 
