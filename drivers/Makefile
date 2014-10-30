@@ -5,7 +5,7 @@ KDIR := ../linux/linux-xlnx/
 PWD := $(shell pwd)
 
 CC := $(CROSS_COMPILE)gcc
-BIN = launcher_fire launcher_fire_buttons
+BIN = launcher_fire launcher_fire_buttons cpre488test
 SOURCES = $(BIN:=.c)
 
 
